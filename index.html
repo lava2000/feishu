@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Forms in one</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #f0f0f0;
+        }
+        .tab-button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border: none;
+            background-color: #a7a498;
+            transition: background-color 0.3s;
+        }
+        .tab-button:hover {
+            background-color: #c75c32;
+            
+        }
+        .tab-button.active {
+            background-color: #90a144;
+        }
+        .tab-content {
+            display: none;
+            width: 100%;
+            height: calc(100vh - 80px);
+            border: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="iframe-container">
+        <iframe  id="myIframe" class="tab-content active" src="https://sckr1icui4.feishu.cn/share/base/form/shrcnKWZ0GnBt4lMDzYf5JWXyte"></iframe >
+
+    </div>
+</body>
+</html>
